@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manbhawni | Web Developer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#hero h1 span {
+    color: #38bdf8;
+}
+
+#hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: linear-gradient(45deg,#38bdf8,#6366f1);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    transform: scale(1.1);
+}
+
+/* SECTION */
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    padding: 15px 25px;
+    border-radius: 20px;
+    background: linear-gradient(45deg,#38bdf8,#6366f1);
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* PROJECTS */
+.project-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #1e293b;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 0 10px 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* CONTACT */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+/* SOCIAL */
+.social {
+    margin-top: 10px;
+}
+
+.social a {
+    margin: 0 10px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Manbhawni</h2>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+    <h1>Hello, I'm <span>Manbhawni</span></h1>
+    <p>Web Developer | HTML | CSS | JavaScript | PHP</p>
+    <button onclick="scrollToSection('projects')">View Projects</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am Manbhawni, a passionate web developer skilled in HTML, CSS, JavaScript, and PHP. 
+        I love building responsive and modern websites.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">PHP</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio using HTML, CSS, JS.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+            <h3>Blog Website (PHP)</h3>
+            <p>Dynamic blog website using PHP and MySQL.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+            <h3>Login System</h3>
+            <p>User login system with PHP backend.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return submitForm()">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <div class="social">
+        <p>Connect with me:</p>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Manbhawni | Web Developer</p>
+</footer>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+
+function submitForm() {
+    alert("Message sent successfully!");
+    return false;
+}
+</script>
+
+</body>
+</html>
